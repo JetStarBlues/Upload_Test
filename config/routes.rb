@@ -1,5 +1,14 @@
 UploadTest::Application.routes.draw do
-  get "pages/home"
+  
+  root :to => "pages#home"
+
+  #get "pages/home"  
+  #get "pages/about"
+  
+  match '/home', :to => 'pages#home'
+  match '/about', :to => 'pages#about'
+
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
