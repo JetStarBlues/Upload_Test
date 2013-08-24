@@ -8,7 +8,12 @@ class PicturesController < ApplicationController
   end
 
   def create
-  	@picture = Picture.new(params[:pictures])
+  	@picture = Picture.new(params[:picture])
+  	if @picture.save
+  		redirect_to @picture
+  	# else
+  	# 	render 'new'
+  	end
   end
 
 end

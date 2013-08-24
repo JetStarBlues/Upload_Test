@@ -11,7 +11,7 @@ UploadTest::Application.routes.draw do
   match '/home', :to => 'pages#home'
   match '/about', :to => 'pages#about'
   #match '/pics', :to => 'pages#pics'
-  #match '/pictures/new', :to => 'pictures#new'
+  match '/pics', :to => 'pictures#new'
 
 
 
