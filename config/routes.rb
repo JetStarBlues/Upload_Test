@@ -1,5 +1,8 @@
 UploadTest::Application.routes.draw do
   
+  resources :pictures
+  #get "pictures/new"
+
   root :to => "pages#home"
 
   #get "pages/home"  
@@ -7,6 +10,8 @@ UploadTest::Application.routes.draw do
   
   match '/home', :to => 'pages#home'
   match '/about', :to => 'pages#about'
+  #match '/pics', :to => 'pages#pics'
+  #match '/pictures/new', :to => 'pictures#new'
 
 
 
