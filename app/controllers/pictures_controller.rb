@@ -11,8 +11,9 @@ class PicturesController < ApplicationController
   	@picture = Picture.new(params[:picture])
   	if @picture.save
   		redirect_to @picture
-  	# else
-  	# 	render 'new'
+  	else
+      flash.now[:error] = "Error. Perharps your file type?"
+  		render 'new'
   	end
   end
 
