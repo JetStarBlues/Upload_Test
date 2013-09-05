@@ -10,3 +10,9 @@ doc/app
 .project
 .DS_Store
 .idea
+parseTest.rb
+parseTest2.rb
+parseTest_clean.rb
+output.js
+sampleSubs.srt
+sampleSubs.txt
